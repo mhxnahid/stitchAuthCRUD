@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stitch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="login" style="display: none;" class="mb-4 text-align-center">
+            <form action="" id="loginForm" onsubmit="loginForm(event)">
+                <div class="form-group">
+                    <input class="form-control" type="text" id="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" id="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-warning" type="submit">Login</button> <button type="button" onclick="sRegister()" class="btn btn-success ml-1" type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="logout" style="display: none;">
+            <button type="button" class="btn btn-sm btn-warning float-right" onclick="logOut()">Logout</button>
+        </div>
+
+        <div id="blog" class="mt-1">
+            <form action="" onsubmit="addBlog(event)" id="blogForm" style="display: none;">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="title" id="blogTitle" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="body" cols="30" rows="10" id="blogBody" placeholder="Post"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Add Blog</button>
+                </div>
+            </form>
+        </div>
+
+        <ul class="list-group" id="blogList"></ul>
+    </div>
+
+    <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.6.0/stitch.js"></script>
+    <script src="scr.js"></script>
+</body>
+
+</html>

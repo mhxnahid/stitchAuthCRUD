@@ -1,0 +1,15 @@
+.formShow .intitle, .formShow .inbody, .formShow .insubmit{
+    display: block;
+}
+
+.formHide .intitle, .formHide .inbody, .formHide .insubmit{
+    display: none;
+}
+
+.formShowButton .ebutton{
+    display: block;
+}
+
+.formHideButton .ebutton{
+    display: none;
+}
